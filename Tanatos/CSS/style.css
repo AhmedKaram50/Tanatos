@@ -1,0 +1,574 @@
+/*Global*/
+body{
+	font-family: arial;
+}
+
+button{
+	background: none;
+	color: #000;
+	border-color: #fff;
+	border-style: solid;
+	cursor: pointer
+}
+
+h1,h2,h3,h4{
+	margin-top:0
+}
+
+p{
+	font-family: tahoma;
+}
+/*Global*/
+/*Start FrameWork*/
+.container{
+	width: 1170px;
+	margin: auto;
+	position: relative
+}
+
+.table{
+	height: 100%;
+	display: table
+}
+
+.table-row{
+	display: table-row
+}
+
+.text-center{
+	text-align: center
+}
+
+.main-color{
+	color: #f7600e
+}
+
+.clear-fix{
+	clear: both
+}
+
+.overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%
+}
+.hidden{
+	display: none
+}
+
+.show{
+	display: block
+}
+/*End FrameWork*/
+/*Start Header*/
+header{
+	background: url(../images/background-1_01.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	position: relative
+}
+
+header .overlay{
+	background-color: rgba(49, 55, 61, .8);
+}
+
+nav{
+	padding:30px 0;
+	position: absolute;
+	width: 100%;
+	top:0;
+	left:0
+}
+
+nav h1{
+	display: inline-block
+}
+
+nav .links{
+	float: right;
+	margin-right: 5px
+}
+
+nav .links i{
+	margin-left: 10px;
+	cursor:pointer;
+}
+
+header .intro h1{
+	margin:0;
+	font-weight:800;
+	font-size: 55px
+}
+
+header .intro p{
+	margin: 10px 0 60px;
+	line-height: 1.7;
+	font-size: 20px;
+	color: #f2f2f2
+		
+}
+
+header .buttons button{
+	color: #fff;
+	padding: 13px 0px;
+	width: 190px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	font-size: 14px;
+	margin: 0 10px;
+	-wibkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+header .buttons button:hover{
+	background-color: #f7600e;
+	border-color: #f7600e;
+	
+}
+
+.arrow{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom:0;
+	left:0;
+	padding:40px 0
+	
+}
+
+.arrow i{
+	border: 2px solid #cccdcf;
+	border-radius: 50%;
+	color: #cccdcf;
+	padding: 15px;
+	cursor: pointer
+	
+}
+
+/*End Header*/
+/*Start features*/
+.features{
+	background-color: #fff;
+	height: 240px;
+	overflow: hidden;
+	padding: 100px
+}
+
+.feat{
+	float:left;
+	width: 22%;
+	margin-right:4%;
+}
+
+.features .feat:last-child{
+	margin-right:0
+}
+
+.feat i{
+	color: #ff620c;
+	border: 1px solid #ff620c;
+	border-radius: 50%;
+	height: 100px;
+    width: 100px;
+    line-height: 100px
+}
+
+.feat h1{
+	font-weight: normal;
+	color: #3b434c;
+	padding: 30px 0 0;
+	font-size: 20px
+}
+
+.feat p{
+	line-height: 1.6;
+	color: #6f7479;
+}
+/*End features*/
+/*Start Subscribe*/
+.subscribe{
+	background: url(../images/secend_background_02_03.png);
+	height: 250px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative
+}
+
+.subscribe .overlay{
+	background-color: rgba(49, 55, 61, .7);
+}
+
+.subscribe form{
+	line-height: 15
+}
+
+.subscribe form input{
+	border: none;
+	width: 500px;
+	height: 50px;
+	border-radius: 10px;
+	margin-right: 30px
+}
+
+.subscribe ::-webkit-input-placeholder{
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.subscribe form button{
+	background-color: #ff620c;
+	color: #fff;
+	border:none;
+	width: 260px;
+	height: 50px;
+	border-radius: 10px;
+}
+/*End Subscribe*/
+/*Start Our Works*/
+.our-works{
+	height: 1200px
+}
+
+.our-works h1{
+	color: #3b434c;
+	font-weight: normal;
+	font-size: 40px;
+	margin: 100px 0 0 0
+}
+
+.our-works span{
+	color: #ff620c
+}
+
+.our-works h1 ~ p{
+	color: #6f7479;
+	line-height: 1.6;
+	font-size: 18px;
+	margin: 30px 0 100px 0
+}
+
+.items-box{
+	overflow:hidden
+}
+
+.our-works .items-box .item{
+	float: left;
+	overflow: hidden;
+	width: 32%;
+	margin-left: 1.33333%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	position: relative
+}
+
+.our-works .items-box .item .overlay{
+	background-color: rgba(247, 96, 14, 0.9);
+	height:99%;
+	border-radius: 10px;
+	color: #fff;
+	display: none;
+}
+
+.our-works .items-box .item:hover .overlay{
+	display: block;
+}
+
+.our-works .items-box .item img{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px
+}
+
+.our-works .items-box .item .overlay h3{
+	margin: 85px 0 0 0
+}
+
+.our-works .items-box .item .overlay p{
+	margin: 30px 0 50px;
+	line-height: 1.6;
+	color: #f7f7f7
+}
+
+.our-works .items-box .item .overlay p ~ button{
+	color: #fff;
+	border-radius: 10px;
+	width: 200px;
+    height: 50px;
+	border-color: #fff;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.our-works .items-box .item .overlay p ~ button:hover{
+	color: #ff620c;
+	background-color: #fff;
+	border-color: #fff
+}
+
+.our-works button:nth-child(4){
+	border: 1px solid #3b434c;
+	border-radius: 10px;
+	color: #3b434c;
+	height: 50px;
+	width: 200px;
+	margin-top: 50px
+}
+
+.our-works button:nth-child(4):hover{
+	color: #fff;
+	background-color: #ff620c;
+	border-color: #ff620c
+}                                                                         
+/*End Our Works------------------------------------------------------------*/
+/*Start Our Team*/
+.our-team{
+	background: url(../images/theard_background_03.png);
+	height: 500px;
+	position: relative;
+	color: #fff;
+}
+
+.our-team .overlay{
+	background-color: rgba(0, 0, 0, 0.9)	
+}
+
+.testimonials img{
+	border-radius: 50%;
+	margin: 90px 0 0 0
+}
+
+.testimonials p{
+	line-height: 1.6;
+	font-style: italic;
+	font-size: 23px;
+	margin: 50px 0;
+	color: #e3e4e4
+}
+
+.our-team i:last-child{
+	position: absolute;
+	top: 50%;
+	right:0;
+	color: #7b7f84
+}
+
+.our-team i:not(:last-child){
+	position: absolute;
+	top:50%;
+	left:0;
+	color: #7b7f84	
+}
+
+.our-team i:hover{
+	color: #ff620c;
+	cursor: pointer;
+}
+/*End Our Team*/
+/*Start Crow*/
+.crow{
+	height: 750px;
+	margin: 90px 0
+}
+
+.crow h1{
+	font-size: 40px;
+	color: #3b434c;
+	font-weight: normal
+}
+
+.crow h1 ~ p{
+	font-size: 18px;
+	color: #3b434c;
+	line-height: 1.6;
+	margin: 25px 0 130px 0;
+}
+
+.crow .team{
+}
+
+.crow .team .person{
+	float: left;
+	width: 25%;
+	color: #9da1a5;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.crow .team .person h3{
+	font-weight: normal;
+	margin: 30px 0 25px;
+	font-size: 24px
+}
+
+.crow .team .person i{
+	margin-bottom: 30px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #9da1a5;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer
+}
+.crow .team .person p{
+	line-height: 1.6;
+	font-size: 14px;
+	margin:0
+}
+
+.crow .team .person img{
+	border-radius: 10px;
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter:grayscale(1);
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.crow .team .person:hover img{
+	filter: none;
+	-webkit-filter:grayscale(0);
+}
+
+.crow .team .person:hover{
+	color: #3b434c;
+	margin-top: -50px
+}
+
+.crow .team .person:hover .fa-facebook{
+	background-color: #205b9f
+}
+
+.crow .team .person:hover .fa-twitter{
+	background-color: #00ace3
+}
+
+.crow .team .person:hover .fa-google-plus{
+	background-color: #ff3921
+}
+/*End Crow*/
+/*Start Say Hello*/
+.say-hello{
+	background: url(../images/say_hello_02.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+.say-hello h1{
+	color: #fff;
+	font-size: 45px;
+	font-weight: normal;
+	padding: 90px 0 0 0
+}
+
+.say-hello p{
+	line-height: 1.6;
+	color: #f7f7f7;
+	font-size: 18px;
+	margin: 30px 0 60px 0
+}
+
+.say-hello .overlay{
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.say-hello form{
+	text-align: center
+}
+
+.say-hello form input{
+	width: 330px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	margin-right: 30px
+}
+
+.say-hello form input:nth-of-type(2){
+	margin-right:0
+}
+
+.say-hello form textarea{
+	display: block;
+	width: 690px;
+	height: 200px;
+    margin:30px 0 0 236px;
+	border-radius: 10px
+}
+
+.say-hello form button{
+	margin: 20px 0 0 -500px;
+	border-radius: 10px;
+	width:200px;
+	height: 50px;
+	color: #fff;
+	background-color: #ff620c;
+	border: 1px solid #ff620c
+}
+
+.say-hello i{
+	float: right;
+	color: #fff;
+	position:relative;
+	top: -45px;
+	right: 230px;
+	background-color:aqua;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.say-hello i:nth-of-type(1){
+	background-color: #205b9f; 
+}
+.say-hello i:nth-of-type(2){
+	background-color: #00ace3;
+}
+.say-hello i:nth-of-type(3){
+	background-color: #ff3921
+}
+.say-hello i:nth-of-type(4){
+	background-color: #ff72a5
+}
+.say-hello i:nth-of-type(5){
+	background-color: #009bd5
+}
+/*End Say Hello*/
+/*Start Fotter*/
+footer{
+	background-color: #3b434c;
+	height: 90px;
+}
+
+footer h4{
+	float: left;
+	width: 50%;
+	padding-top: 40px;
+	color: #ddd;
+	text-align: center
+}
+footer span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff
+}
+/*End Fotter*/
